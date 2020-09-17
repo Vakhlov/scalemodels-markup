@@ -34,8 +34,8 @@ a:link,a:visited,a:hover,a:active{color:#970009;cursor:pointer;}
 
 @media only screen and (max-device-width: 480px) {
 /*************************/
-#rightcolumn, #leftcolumn{
-}
+/* #rightcolumn, #leftcolumn{
+} */
 #centercolumn {
         padding-left:0px !important;
 }
@@ -72,15 +72,15 @@ body {
     border-left: 3px solid #990000;
 }
 /*table,td,div {direction: ltr; text-align:left}(*/
-.imgfade{filter:alpha(opacity=50); -moz-opacity:0.5;margin-left:3px}
-.imgfull{filter:alpha(opacity=100); -moz-opacity:1;margin-left:3px}
+.imgfade{filter:alpha(opacity=50); opacity:0.5;margin-left:3px}
+.imgfull{filter:alpha(opacity=100); opacity:1;margin-left:3px}
 .center{direction: ltr; text-align:center !important}
 .left {direction: ltr; text-align:left !important}
 .right{direction: ltr; text-align:right !important}
 .rc_img_pointer {vertical-align:middle;border:0px;margin:0px 5px;}
 .rc_warning{color:#ff0000;font-weight:bold;}
 .sql_dbg, .cached_sql_dbg {border-top:1px dashed #003030; padding: 3px;text-align:left;}
-.sql_dbg { }
+/* .sql_dbg { } */
 .cached_sql_dbg {font-style:italic;}
 
 
@@ -124,7 +124,7 @@ body {
 /* конец ЏлавающаЯ панель */
 
 
-.comment.{
+.comment {
 	margin-bottom: 40px;
 	font-size: 0.8em;
 	padding: 0px !important;
@@ -371,8 +371,8 @@ form, td, th,
 	font-weight: bold;
 }
 
-div.forum {
-}
+/* div.forum {
+} */
 div.forum a {
 	padding-left: 15px;
 /*	font-weight:normal;*/
@@ -547,9 +547,9 @@ img{border:0px;}
 
 
 
-.button, .file, .indextable {
+/* .button, .file, .indextable { */
 /*	background-color: #EFEFEF; */
-}
+/* } */
 
 .primaryaction {
 display:       inline-block;
@@ -1206,7 +1206,7 @@ a.relap-default__logo {
     padding: 10px;
     font-size: 14px !important;
     text-decoration: none !important;
-    font-color: black !important;
+    /* font-color: black !important; */
     font-family: sans-serif;
     display:block;
     float:left;
@@ -1247,10 +1247,10 @@ li.teaser {
 	min-height: 38px;
 }
 
-.teaser a { 	}
+/* .teaser a { 	} */
 /*.teaser .active  {background-color:#03699C !important; color:white;}*/
 .teaser a { display: block; padding: 3px !important;}
-.teaser a, .teaser a:visited {}
+/* .teaser a, .teaser a:visited {} */
 .teaser a:hover {background-color:#EFEFEF !important;}
 
 .last_articles .teaser .text,
@@ -1545,9 +1545,9 @@ font-size:11px;
   background: ButtonFace;
 }
 
-.calendar .nav {
+/* .calendar .nav { */
 /*  background: ButtonFace url(menuarrow.gif) no-repeat 100% 100%; */
-}
+/* } */
 
 .calendar thead .title { /* This holds the current "month, year" */
   font-weight: bold;
@@ -1558,11 +1558,11 @@ font-size:11px;
   text-align: center;
 }
 
-.calendar thead .headrow { /* Row <TR> containing navigation buttons */
-}
+/* .calendar thead .headrow { *//* Row <TR> containing navigation buttons */
+/* } */
 
-.calendar thead .daynames { /* Row <TR> containing the day names */
-}
+/* .calendar thead .daynames { *//* Row <TR> containing the day names */
+/* } */
 
 .calendar thead .name { /* Cells <TD> containing the day names */
   border-bottom: 1px solid ButtonShadow;
@@ -1659,8 +1659,8 @@ font-size:11px;
 
 /* The footer part -- status bar and "Close" button */
 
-.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
-}
+/* .calendar tfoot .footrow { *//* The <TR> in footer (only one right now) */
+/* } */
 
 .calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
   background: ButtonFace;
