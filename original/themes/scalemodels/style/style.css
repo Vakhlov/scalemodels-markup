@@ -219,7 +219,7 @@ ul.jd_menu_vertical li {
 
 .home_img 	{
 	vertical-align:middle;
-	background-image: url(http://static.scalemodels.ru/themes/scalemodels/images/home.gif);
+	background-image: url(../images/home.gif);
     background-repeat: no-repeat;
 	width:19px !important;
 }
@@ -266,7 +266,7 @@ h1, h2, h3, h4  {
 	width:20px;
 	margin: 0 3px;
 	line-height:20px;
-	background-image: url(http://static.scalemodels.ru/themes/scalemodels/images/social_buttons.png);
+	background-image: url(../images/social_buttons.png);
 	background-repeat:no-repeat;
 	background-position:-60px 0;
 }
@@ -282,7 +282,7 @@ h1, h2, h3, h4  {
 	width:20px;
 	margin: 0 3px;
 	line-height:20px;
-	background-image: url(http://static.scalemodels.ru/themes/scalemodels/images/social_buttons.png);
+	background-image: url(../images/social_buttons.png);
 	background-repeat:no-repeat;
 	text-decoration: none;
 }
@@ -315,7 +315,7 @@ h1, h2, h3, h4  {
 	height:16px;
 	width:16px;
 	line-height:16px;
-	background-image: url(http://static.scalemodels.ru/themes/scalemodels/images/social_buttons.png);
+	background-image: url(../images/social_buttons.png);
 	background-repeat:none;
 	background-position:-100px 0;
 }
@@ -644,7 +644,7 @@ text-decoration: none !important;
 	float: right;
 	clear:both;
 	text-align:right;
-	background:transparent url(/themes/scalemodels/images/tag.gif) no-repeat scroll 0 3px;
+	background:transparent url(../images/tag.gif) no-repeat scroll 0 3px;
 	padding:1px 0 1px 16px;
 	font-size:12px;
 }
@@ -911,7 +911,7 @@ input,textarea, select {
 	text-align: left;
 	width: 10px;
 	height: 10px;
-	background: url(/modules/whatsnew/images/icons.gif) no-repeat;
+	background: url(../../../modules/whatsnew/images/icons.gif) no-repeat;
 }
 
 #wn-articles, #wn-news {
@@ -940,7 +940,7 @@ input,textarea, select {
 	font: 18px tahoma;
 	font-weight: bold;
 	clear:both;
-	background: #03699C url(http://static.scalemodels.ru/themes/scalemodels/images/cellpic3.gif);
+	background: #03699C url(../images/cellpic3.gif);
 	text-align: center;
 	padding: 4px;
 /*    height:14px;*/
@@ -1062,7 +1062,7 @@ div .news, div .myarticles, div .mylinks, div .mydownloads {
 }
 
 .wiki-link:hover {
-	background: transparent url(/themes/scalemodels/images/doku.gif) no-repeat scroll 0px 1px;
+	background: transparent url(../images/doku.gif) no-repeat scroll 0px 1px;
 	text-decoration: underline;
 }
 
@@ -1146,7 +1146,7 @@ a.tag-text{
 
 
 .xoopsfaq_css .question_list {
-	list-style-image:url(/modules/xoopsfaq/images/question.gif);
+	list-style-image:url(../../../modules/xoopsfaq/images/question.gif);
 	font-weight: bold;
 	font-weight: normal;
 	font-size: 1em;
@@ -1155,7 +1155,7 @@ a.tag-text{
 .xoopsfaq_css .question_category {
 	font-size: 18px;
 	font-weight: bold;
-	background-image: url(/modules/xoopsfaq/images/folder.gif);
+	background-image: url(../../../modules/xoopsfaq/images/folder.gif);
 	background-repeat:no-repeat;
 	padding-left:22px;
 }
@@ -1312,7 +1312,7 @@ li.teaser {
 	text-decoration: none;
 }
 .tag-link:hover {
-	background: transparent url(/themes/scalemodels/images/tag.gif) no-repeat scroll 0 3px;
+	background: transparent url(../images/tag.gif) no-repeat scroll 0 3px;
 	text-decoration: underline;
 }
 
@@ -1837,7 +1837,7 @@ right: 5px;
 width: 32px;
 height: 32px;
 cursor: pointer;
-background: transparent url(/include/js/jcarousel/skins/tango/next-horizontal.png) no-repeat 0 0;
+background: transparent url(../../../include/js/jcarousel/skins/tango/next-horizontal.png) no-repeat 0 0;
 }
 
 .prev-horizontal {
@@ -1847,7 +1847,7 @@ left: 5px;
 width: 32px;
 height: 32px;
 cursor: pointer;
-background: transparent url(/include/js/jcarousel/skins/tango/prev-horizontal.png) no-repeat 0 0;
+background: transparent url(../../../include/js/jcarousel/skins/tango/prev-horizontal.png) no-repeat 0 0;
 }
 
 

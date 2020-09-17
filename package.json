@@ -1,0 +1,19 @@
+{
+  "name": "scalemodels-ru-refactoring-experiment",
+  "version": "1.0.0",
+  "description": "scalemodels.ru's index page refactoring experiment",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve -c serve.json .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "refactoring",
+    "scalemodels"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}

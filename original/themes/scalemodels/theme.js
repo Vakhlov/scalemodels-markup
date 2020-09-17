@@ -181,14 +181,14 @@ $(document).ready(function() {
             if (json_res['error']==0) {
                 if (result['current_vote']==1) {
                     //console.log( "UP");
-                    $('#vote_up').attr('src', '/images/vote_up.gif');
-                    $('#vote_down').attr('src', '/images/vote_down_end.gif');
+                    $('#vote_up').attr('src', 'images/vote_up.gif');
+                    $('#vote_down').attr('src', 'images/vote_down_end.gif');
                     $('#vote_up').unbind('click').unbind('mouseover').unbind('mouseout').css('cursor', 'default');
                     $('#vote_down').unbind('click').unbind('mouseover').unbind('mouseout').css('cursor', 'default');
                 } else {
                     //console.log( "DOWN");
-                    $('#vote_up').attr('src', '/images/vote_up_end.gif');
-                    $('#vote_down').attr('src', '/images/vote_down.gif');
+                    $('#vote_up').attr('src', 'images/vote_up_end.gif');
+                    $('#vote_down').attr('src', 'images/vote_down.gif');
                     $('#vote_up').unbind('click').unbind('mouseover').unbind('mouseout').css('cursor', 'default');
                     $('#vote_down').unbind('click').unbind('mouseover').unbind('mouseout').css('cursor', 'default');
                 }
@@ -212,9 +212,9 @@ $(document).ready(function() {
                     console.log('No pageTracker');
                 }
         }).mouseover(function(){
-            $('#vote_up').attr('src', '/images/vote_up_light.gif');
+            $('#vote_up').attr('src', 'images/vote_up_light.gif');
         }).mouseout(function(){
-            $('#vote_up').attr('src', '/images/vote_up_start.gif');
+            $('#vote_up').attr('src', 'images/vote_up_start.gif');
         });
 
         $('#vote_up').css('cursor', 'pointer');
@@ -227,9 +227,9 @@ $(document).ready(function() {
                     console.log('No pageTracker');
                 }
         }).mouseover(function(){
-            $('#vote_down').attr('src', '/images/vote_down_light.gif');
+            $('#vote_down').attr('src', 'images/vote_down_light.gif');
         }).mouseout(function(){
-            $('#vote_down').attr('src', '/images/vote_down_start.gif');
+            $('#vote_down').attr('src', 'images/vote_down_start.gif');
         });
     
         $('#vote_down').css('cursor', 'pointer');
