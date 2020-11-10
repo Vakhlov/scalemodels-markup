@@ -1,0 +1,107 @@
+html,
+body {
+    --linkColor: #069;
+    --linkHover: #DD6900;
+    margin: 0;
+    padding: 0;
+}
+
+.news-item {
+    margin-top: 20px;
+    padding: 0 10px 16px 10px;
+}
+
+/* TODO-refactor: font-family, font-size, line-height
+    font-family:
+        - указать дополнительные шрифты
+        - определять выше
+    font-size:
+        - определять выше
+    line-height:
+        - определять выше
+*/
+.news-item h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.news-item a {
+    color: var(--linkColor);
+}
+
+.news-item a:hover,
+.news-item a:focus,
+.news-item a:active {
+    color: var(--linkHover);
+}
+
+.news-item p {
+/* TODO-refactor: font-family, font-size, line-height
+    font-family:
+        - навести порядок со шрифтами, оставить наиболее похожие и поддерживаемые
+        - определять выше
+    font-size:
+        - определять выше
+    line-height:
+        - определять выше
+*/
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.news-item img {
+    height: auto;
+    width: 100%;
+}
+
+.news-item__author {
+/* TODO-refactor: font-family, font-size, font-weight
+    font-family:
+        - навести порядок со шрифтами, оставить наиболее похожие и поддерживаемые
+        - определять выше
+    font-size:
+        - определять выше
+    font-weight:
+        - использовать утилитарный класс?
+*/
+    font-family: Vardana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+@media (min-width: 1024px) {
+    .news-item {
+        border-left: 3px solid #D1D7DC;
+        display: grid;
+        grid-template-areas:
+            "title author"
+            "text text";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding-bottom: 0;
+    }
+
+    .news-item h1 {
+        grid-area: title;
+        margin: 0;
+    }
+
+    .news-item p {
+        grid-area: text;
+    }
+
+    .news-item img {
+        float: left;
+        margin: 5px 5px 5px 1px;
+        width: 120px;
+    }
+
+    .news-item__author {
+        grid-area: author;
+        line-height: 3;
+        white-space: nowrap;
+    }
+}
