@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Верстка списка новостей</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section aria-labelledby="forum-links-" class="forum-links">
+            <h2 class="visually-hidden" id="forum-links-" tabindex="-1">Популярные темы форума</h2>
+            <ul>
+                <li><a href="http://scalemodels.ru/modules/forum/viewtopic_t_82844.html">Су-27 постройка в 48мом от G.W.H</a></li>
+                <li><a href="http://scalemodels.ru/modules/forum/viewtopic_t_82843.html">ICM Миг-25РБТ (72172) + Микродизайн</a></li>
+                <li><a href="http://scalemodels.ru/modules/forum/viewtopic_t_82842.html">Миг-3 Ранний Trumperter 1/48</a></li>
+                <li><a href="http://scalemodels.ru/modules/forum/viewtopic_t_82838.html">Fw190A-8/R2 1/48 EDUARD</a></li>
+            </ul>
+        </section>
+    </body>
+</html>
+
+<!-- notes
+Компоновка
+----------
+    Сам по себе набор ссылок на отдельные ветки форума является списком. Однако он используется как элемент блока событий за день. Поэтому дополнительно имеет заголовок, скрытый от глаз пользователя, но доступный программам для чтения с экрана, и обернут в тег `section`, чтобы отделить его от других элементов блока событий.
+-->

@@ -8,7 +8,7 @@
     </head>
     <body>
         <article class="news-item">
-            <h1><a href="http://scalemodels.ru/articles/14483-Eduard-1-48-MiG-21bisD-vvs-khorvatii.html">Eduard 1/48 MiG-21bisD ВВС Хорватии</a></h1>
+            <h3><a href="http://scalemodels.ru/articles/14483-Eduard-1-48-MiG-21bisD-vvs-khorvatii.html">Eduard 1/48 MiG-21bisD ВВС Хорватии</a></h3>
             <!-- googleoff: index -->
             <p>
                 <a href="http://scalemodels.ru/modules/myarticles/img_14483_1599402754_IMG_0707.JPG.html" target="_blank">
@@ -26,7 +26,7 @@
                 Сделал машину с тактическим номером 115 ВВС Хорватии аэродром Загреб на момент эксплуатации 2013 года...
             </p>
             <!-- googleon: index -->
-            <div class="news-item__author"><a href="http://scalemodels.ru/blog/kfir" ref="nofollow">kfir</a></div>
+            <footer><span class="visually-hidden">Опубликовано пользователем</span> <a href="http://scalemodels.ru/blog/kfir" ref="nofollow">kfir</a></footer>
         </article>
     </body>
 </html>
@@ -99,9 +99,7 @@
 Использование css-классов
 -------------------------
     news-item (блок)
-        news-item__author (элемент)
-
-        Элементами также являются заголовок и текст. Предпочитаю использовать каскад там где это возможно, вместо css-классов: код получается проще, а возникшие в результате изменений ошибки легко поправить.
+        Элементами являются заголовок, текст и концевик. Предпочитаю использовать каскад там где это возможно, вместо css-классов: код получается проще, а возникшие в результате изменений ошибки легко поправить.
 
 srcset, sizes и src
 -------------------
@@ -118,4 +116,8 @@ srcset, sizes и src
     TODO-research: верстка без использования сеток на той же html-структуре
         - попробовать сделать на flex
         - попробовать сделать без flex
+
+    Вопросы:
+        - правильно ли будет использовать для разметки заголовка новости тег `h1`?
+            Новости группируются в разделы (`section`), у которых уже есть заголовок, рачмеченный при помощи `h1`. Однако, тег `article` формируется свой контекст, в рамках которого допустимо использовать тег `h1`. Нужно это проверить, а пока оставляю `h3`.
 -->
