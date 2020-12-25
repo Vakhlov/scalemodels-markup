@@ -3,6 +3,36 @@ html {
     --linkHover: #DD6900;
 }
 
+/* компоновочный блок */
+.layout-block {
+
+}
+
+/* TODO-refactor: font-family, font-size, line-height
+    font-family:
+        - определять выше
+    font-size:
+        - определять выше
+    line-height:
+        - определять выше
+*/
+.layout-block h2 {
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #D1D7DC;
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.layout-block h2::before {
+    content: '\00BB';
+    display: inline-block;
+    margin-right: 3px;
+}
+
+/* новости */
 .news-item {
     margin-top: 20px;
     padding: 0 10px 16px 10px;
@@ -69,6 +99,7 @@ html {
     text-align: right;
 }
 
+/* блок ссылок на форум нод блоком новостей */
 .forum-links ul {
 /* TODO-refactor: font-family, font-size, font-weight, line-height
     font-family:
@@ -117,6 +148,17 @@ html {
     position: absolute;
     width: 1px;
 }    
+
+/* блок "Интересное */
+.most-interesting-links ul {
+    list-style: none;
+    margin: 0 0 0 9px;
+    padding: 20px 0;
+}
+
+.most-interesting-links li {
+    display: inline-block;
+}
 
 @media (min-width: 1024px) {
     .news-item {
