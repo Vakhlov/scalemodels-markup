@@ -6,6 +6,17 @@ body {
     padding: 0;
 }
 
+/* утилитарные классы */
+.mt-40 {
+    margin-top: 40px;
+}
+
+/* правила общей компоновки */
+main {
+    margin-left: 30px;
+    padding: 3px;
+}
+
 /* компоновочный блок */
 .layout-block h2 {
     background-color: #EFEFEF;

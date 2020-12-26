@@ -3,6 +3,17 @@ html {
     --linkHover: #DD6900;
 }
 
+/* утилитарные классы */
+.mt-40 {
+    margin-top: 40px;
+}
+
+/* правила общей компоновки */
+main {
+    margin-left: 30px;
+    padding: 3px;
+}
+
 /* компоновочный блок */
 /* TODO-refactor: font-family, font-size, line-height
     font-family:
