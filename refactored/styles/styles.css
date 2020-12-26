@@ -4,10 +4,6 @@ html {
 }
 
 /* компоновочный блок */
-.layout-block {
-
-}
-
 /* TODO-refactor: font-family, font-size, line-height
     font-family:
         - определять выше
@@ -160,6 +156,100 @@ html {
     display: inline-block;
 }
 
+/* блок "Лучшие статьи" */
+.best-articles {
+    /* TODO-refactor: font-family, font-size
+    font-family:
+        - определять выше
+    font-size:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.best-articles a,
+.best-articles a {
+    color: var(--linkColor);
+}
+
+.best-articles__left {
+    padding: 3px 9px 0 9px;
+}
+
+.best-articles__right {
+    padding: 6px;
+}
+
+.best-articles__right a {
+    align-items: center;
+    display: flex;
+}
+
+.best-articles__right a {
+    padding: 3px;
+}
+
+.best-articles a:hover,
+.best-articles a:focus,
+.best-articles a:active {
+    background-color: #EFEFEF;
+    color: var(--linkHover);
+}
+
+.best-articles__right img {
+    flex-basis: 120px;
+    margin-right: 5px;
+}
+
+.best-articles__left a {
+    display: block;
+    font-size: 0;
+    position: relative;
+}
+
+.best-articles__left img {
+    width: 100%;
+}
+
+.best-articles__left span {
+    background: rgba(239, 239, 239, .85);
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    height: 100px;
+    left: 0;
+    padding: 13px 0 13px 15px;
+    position: absolute;
+    right: 0;
+}
+
+.best-articles__ads {
+    padding: 3px;
+}
+
+@media (min-width: 640px) {
+    .best-articles__content {
+        display: grid;
+        grid-gap: 0;
+        grid-template-areas: "left right";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .best-articles__left {
+        grid-area: left;
+    }
+
+    .best-articles__right {
+        grid-area: right;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 @media (min-width: 1024px) {
     .news-item {
         border-left: 3px solid #D1D7DC;
@@ -191,5 +281,22 @@ html {
         grid-area: author;
         line-height: 3;
         white-space: nowrap;
+    }
+
+    .best-articles__left a {
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    .best-articles__left span {
+        bottom: -100px;
+        transition: bottom .3s;
+    }
+
+    .best-articles__left a:hover span,
+    .best-articles__left a:focus span,
+    .best-articles__left a:active span {
+        bottom: 0;
+        transition: bottom .3s;
     }
 }

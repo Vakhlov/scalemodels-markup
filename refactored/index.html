@@ -514,69 +514,43 @@ fallback.load({
 <div id="calendar_dom" class="calendar_css">
 
 <!-- START MODULE DIV CSS -->
-<table cellspacing="0" cellpadding="3" border="0" valign="top" width="100%"><tr><td></td>
-		</tr><tr><td>
-        <style type="text/css">
-    .mosaic-block {
-	float:left;
-	position:relative;
-	overflow:hidden;
-	margin-top:3px;
-	width:500px;
-	height:410px;
-	background:#EFEFEF url(images/progress.gif) no-repeat center center;
-    }
-
-	.mosaic-backdrop {
-		display:none;
-		position:absolute;
-		top:0;
-	width:500px;
-	height:410px;
-		background:#EFEFEF;
-	}
-
-	.mosaic-overlay {
-		display:none;
-		z-index:5;
-		position:absolute;
-		width:100%;
-		height:100%;
-        background:#FFFFFF;
-
-	}
-
-		.bar .mosaic-overlay {
-			bottom:-100px;
-			height:100px;
-			opacity:0.85;
-			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-			filter:alpha(opacity=0.85);
-            background:#EFEFEF;
-
-		}
-		.details h4 {
-            margin-left: 15px;
-		}
-
-		</style>
-    <div class="best_articles"><div class="header"> &raquo; Лучшие статьи: </div>
-    <table width="100%"><tr><td valign="top">
-                    <div class="mosaic-block bar">
-                        <a href="/articles/14475.html"  class="mosaic-overlay">
-                            <div class="details">
-                                <h4>Roden 1/72 Albatros D.XI</h4>
-                            </div>
-                        </a>
-                            <a href="/articles/14475.html">
-                            <div class="mosaic-backdrop">
-                                <img src="images/cache/title/14475.jpg">
-                            </div>
-                            </a>
-                        </div></td><td valign="top"><li class="teaser"><a href="http://scalemodels.ru/articles/14450-ICM-1-72-ural-atz-5-4320.html"><div class="imageplace"><img src="images/cache/banner/14450.jpg" align="left"/></div><div class="text">ICM 1/72 Урал АТЗ-5-4320</div></a></li><li class="teaser"><a href="http://scalemodels.ru/articles/14477-Dora-Wings-1-72-Bellanca-J-300.html"><div class="imageplace"><img src="images/cache/banner/14477.jpg" align="left"/></div><div class="text">Dora Wings 1/72 Bellanca J 300</div></a></li></td></table>
-    <div style="clear:both;"><center></center></div>
-    </div></td></tr><tr>
-		<td ><div style="padding-left:12px;"></div></td></tr></td></tr><tr><td class="index-block">
+<table cellspacing="0" cellpadding="3" border="0" valign="top" width="100%">
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <!-- refactored -->
+        <section class="best-articles layout-block">
+          <h2>Лучшие статьи</h2>
+          <div class="best-articles__content">
+            <div class="best-articles__left">
+              <a href="/articles/14475.html">
+                <img src="images/cache/title/14475.jpg" alt="*">
+                <span>Roden 1/72 Albatros D.XI</span>
+              </a>
+            </div>
+            <div class="best-articles__right">
+              <div class="best-articles__items">
+                <a href="/articles/14450-ICM-1-72-ural-atz-5-4320.html">
+                  <img src="images/cache/banner/14450.jpg" alt="*" width="120" height="60">
+                  <span>ICM 1/72 Урал АТЗ-5-4320</span>
+                </a>
+                <a href="/articles/14477-Dora-Wings-1-72-Bellanca-J-300.html">
+                  <img src="images/cache/banner/14477.jpg" alt="*" width="120" height="60">
+                  <span>Dora Wings 1/72 Bellanca J 300</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /refactored -->
+      </td>
+    </tr>
+    <tr>
+      <td ><div style="padding-left:12px;"></div></td>
+    </tr>
+    <tr><td class="index-block">
       <!-- refactored -->
       <section aria-labelledby="news-and-articles-13-11-20">
         <h2 id="news-and-articles-13-11-20" tabindex="-1" class="visually-hidden">Новые статьи</h2>
