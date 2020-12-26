@@ -147,13 +147,16 @@ html {
 
 /* блок "Интересное */
 .most-interesting-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
-    margin: 0 0 0 9px;
+    margin: 0 9px;
     padding: 20px 0;
 }
 
 .most-interesting-links li {
-    display: inline-block;
+    margin: 0 10px 10px 10px;
 }
 
 /* блок "Лучшие статьи" */
@@ -321,6 +324,15 @@ html {
         grid-area: author;
         line-height: 3;
         white-space: nowrap;
+    }
+
+    .most-interesting-links ul {
+        display: block;
+    }
+
+    .most-interesting-links li {
+        display: inline-block;
+        margin: 0;
     }
 
     .best-articles__left a {
