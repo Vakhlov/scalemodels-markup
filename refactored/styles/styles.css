@@ -8,6 +8,10 @@ html {
     margin-top: 40px;
 }
 
+.t-center {
+    text-align: center;
+}
+
 /* правила общей компоновки */
 main {
     margin-left: 30px;
@@ -321,6 +325,40 @@ main {
 .important-news img {
     flex-basis: 120px;
     margin-right: 5px;
+}
+
+/* блок подписки на рассылку */
+.subscription-form {
+    /* TODO-refactor: font-family, font-size
+    font-family:
+        - определять выше
+    font-size:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.subscription-form div {
+    line-height: 17px;
+    margin-bottom: 13px;
+}
+
+.subscription-form a {
+    /* TODO-refactor: color, font-weight */
+    color: var(--linkColor);
+    font-weight: bold;
+}
+
+.subscription-form a:hover,
+.subscription-form a:focus,
+.subscription-form a:active {
+    color: var(--linkHover);
+}
+
+.subscription-form input {
+    font-size: 12px;
 }
 
 @media (min-width: 640px) {
