@@ -230,6 +230,46 @@ html {
     padding: 3px;
 }
 
+/* ссылки постраничной разбивки */
+.pagination {
+    display: flex;
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 5px 10px;
+    text-transform: lowercase;
+}
+
+.pagination a {
+    background-color: #D1D7DC;
+    color: var(--linkColor);
+    line-height: 27px;
+    margin: 0 3px;
+    padding: 0 6px;
+}
+
+.pagination a:hover,
+.pagination a:focus,
+.pagination a:active {
+    background-color: #EFEFEF;
+    color: var(--linkHover);
+}
+
+.pagination__prev::before {
+    content: '\00AB\00AB';
+    display: inline;
+}
+
+.pagination__next::after {
+    content: '\00BB\00BB';
+    display: inline;
+}
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
