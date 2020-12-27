@@ -17,7 +17,12 @@ body {
 
 /* правила общей компоновки */
 main {
-    margin-left: 30px;
+    padding: 3px;
+}
+
+aside {
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 3px;
 }
 
@@ -480,6 +485,24 @@ main {
 }
 
 @media (min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-gap: 0;
+        grid-template-areas: "main aside";
+        grid-template-columns: auto 310px;
+        grid-template-rows: 1fr;
+        margin-left: 60px;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+        width: 310px;
+    }
+
     .news-item {
         border-left: 3px solid #D1D7DC;
         display: grid;
