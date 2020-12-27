@@ -372,6 +372,98 @@ main {
     margin-bottom: 13px;
 }
 
+/* блок "О сайте" */
+.people-list {
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    margin-bottom: 18px;
+}
+
+.people-list span {
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 9px;
+}
+
+.people-list ul {
+    font-size: 9px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.people-list li {
+    padding: 9px;
+}
+
+.people-list a {
+    /* TODO-refactor: color, font-weight */
+    color: var(--linkColor);
+    font-weight: bold;
+}
+
+.people-list a:hover,
+.people-list a:focus,
+.people-list a:active {
+    color: var(--linkHover);
+}
+
+.mailto-link {
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-bottom: 22px;
+}
+
+.mailto-link a {
+    color: var(--linkColor);
+    font-weight: bold;
+}
+
+.mailto-link a:hover,
+.mailto-link a:focus,
+.mailto-link a:active {
+    color: var(--linkHover);
+}
+
+.site-button {
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    margin-bottom: 22px;
+}
+
+.site-button span {
+    display: block;
+    /* TODO-refactor: font-family */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: .7em 0;
+}
+
+.site-button a {
+    color: var(--linkColor);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.site-button a:hover,
+.site-button a:focus,
+.site-button a:active {
+    color: var(--linkHover);
+}
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
