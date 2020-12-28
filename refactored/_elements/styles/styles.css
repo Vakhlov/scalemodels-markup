@@ -160,20 +160,6 @@ aside {
     width: 1px;
 }
 
-/* блок "Интересное */
-.most-interesting-links ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0 9px;
-    padding: 20px 0;
-}
-
-.most-interesting-links li {
-    margin: 0 10px 10px 10px;
-}
-
 /* блок "Лучшие статьи" */
 .best-articles {
     /* TODO-refactor: font-family, font-size
@@ -464,6 +450,29 @@ aside {
     color: var(--linkHover);
 }
 
+/* баннеры: блоки "Последние статьи" и "Интересное" */
+.banner-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 9px;
+    padding: 20px 0 10px 0;
+}
+
+.banner-list li {
+    margin: 0 10px 10px 10px;
+}
+
+.banner-list a {
+    display: block;
+}
+
+.banner-list img {
+    font-size: 12px;
+}
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
@@ -535,15 +544,6 @@ aside {
         white-space: nowrap;
     }
 
-    .most-interesting-links ul {
-        display: block;
-    }
-
-    .most-interesting-links li {
-        display: inline-block;
-        margin: 0;
-    }
-
     .best-articles__left a {
         max-width: 500px;
         overflow: hidden;
@@ -559,5 +559,14 @@ aside {
     .best-articles__left a:active span {
         bottom: 0;
         transition: bottom .3s;
+    }
+
+    .banner-list {
+        display: block;
+    }
+
+    .banner-list li {
+        display: inline-block;
+        margin: 0 4px 0 0;
     }
 }

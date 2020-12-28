@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Верстка блока баннеров под главным меню</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="content">
+            <h2 id="article-links" tabindex="-1" class="visually-hidden">Последние статьи</h2>
+            <ul aria-labelledby="article-links" class="banner-list">
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=1619" rel="nofollow" target="_blank"><img src="images/banners/teh_burbulyator-2.gif" alt="Чистящая станция для аэрографа или бурбулятор, часть ковырна"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=12474" rel="nofollow" target="_blank"><img src="images/banners/m2_11.gif" alt="CyberHobby 1/72 Meteor F.1 - Идеальная изкоробка"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=4002" rel="nofollow" target="_blank"><img src="images/banners/matrev72_do18d-4.gif" alt="Matchbox/Revell 1/72 Dornier Do-18D"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=7803" rel="nofollow" target="_blank"><img src="images/banners/4475-fm35-ija3-chinu-1.gif" alt="Fine Molds 1/35 IJA Type 3 Chi-Nu"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=8108" rel="nofollow" target="_blank"><img src="images/banners/p-51c_mustang.gif" alt="Revell 1/72 P-51C Mustang"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=8397" rel="nofollow" target="_blank"><img src="images/banners/is2_2.gif" alt="Звезда 1/35 ИС-2 - Первая серьезная модель"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=17025" rel="nofollow" target="_blank"><img src="images/banners/folgore-mc.202_banner_120x6.gif" alt="Hasegawa 1/48 Folgore MC.202"></a></li>
+                <li><a href="http://scalemodels.ru/modules/banners/click.php?op=click&amp;bid=13470" rel="nofollow" target="_blank"><img src="images/banners/55555.gif" alt="Airfix 1/72 F-51D Mustang"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+<!-- notes 
+Компоновка
+----------
+    Блок "Последние статьи" представляет собой набор баннеров. Его верстка совпадает с версткой набора баннеров в блоке "Интересное".
+
+    Поскольку блок является самостоятельной единицей, участвующей в общей компоновке страницы, ддля заголовка используется тег `h2`.
+
+Особенности
+-----------
+    С целью контроля отступов и высоты блоков, у контейнера обнуляется размер шрифта, который потом восстанавливается в дочерних элементах.
+-->
