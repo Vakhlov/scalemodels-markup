@@ -473,6 +473,53 @@ aside {
     font-size: 12px;
 }
 
+/* меню в подвале */
+.footer-menu-container {
+    background-color: #EFEFEF;
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-menu-container ul {
+    list-style: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.footer-menu-container li {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-menu-container a {
+    color: var(--linkColor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-menu-container a:hover,
+.footer-menu-container a:focus,
+.footer-menu-container a:active {
+    color: var(--linkHover);
+}
+
+.footer-menu-container li a {
+    text-transform: uppercase;
+}
+
+.scroll-up {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
@@ -568,5 +615,24 @@ aside {
     .banner-list li {
         display: inline-block;
         margin: 0 4px 0 0;
+    }
+
+    .footer-menu-container ul {
+        margin-bottom: 25px;
+    }
+
+    .footer-menu-container li {
+        display: inline;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 5px;
+    }
+
+    .scroll-up {
+        height: 25px;
+        line-height: 25px;
+        position: absolute;
+        right: 10px;
+        top: 0;
     }
 }
