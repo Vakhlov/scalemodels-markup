@@ -1,6 +1,9 @@
-html {
+html,
+body {
     --linkColor: #069;
     --linkHover: #DD6900;
+    margin: 0;
+    padding: 0;
 }
 
 /* утилитарные классы */
@@ -645,6 +648,131 @@ aside {
     text-align: center;
 }
 
+/* основное меню */
+.main-nav {
+    background-color: #3092C0;
+    background-image: linear-gradient(to bottom, #3298C8, #2E8CB8);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+}
+
+.main-nav::after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.main-nav h2 {
+    float: left;
+    margin: 0;
+}
+
+.main-nav h2 a {
+    color: #FFF;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 10px 10px 20px;
+    text-decoration: none;
+}
+
+.main-menu {
+    box-shadow: none;
+    clear: both;
+}
+
+.main-menu::before {
+    background: #2E8CB8;
+    content: '';
+    display: block;
+    height: 1px;
+    overflow: hidden;
+}
+
+.main-menu > li > a {
+    text-transform: uppercase;
+}
+
+.main-menu-btn {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    text-indent: 20px;
+    -webkit-tap-highlight-color: #000;
+    white-space: nowrap;
+    width: 20px;
+}
+
+.main-menu-btn-icon,
+.main-menu-btn-icon::before,
+.main-menu-btn-icon::after {
+    background-color: #FFF;
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all .25s;
+    width: 24px;
+}
+
+.main-menu-btn-icon {
+    margin-top: -1px;
+    top: 50%;
+}
+
+.main-menu-btn-icon::before,
+.main-menu-btn-icon::after {
+    content: '';
+}
+
+.main-menu-btn-icon::before {
+    top: -7px;
+}
+
+.main-menu-btn-icon::after {
+    top: 7px;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+    background-color: transparent;
+    height: 0;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon::before,
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon::after {
+    left: -1px;
+    top: 0;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon::before {
+    transform: rotate(45deg);
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon::after {
+    transform: rotate(-45deg);
+}
+
+.main-menu {
+    display: none;
+}
+
+#main-menu-state:checked ~ .main-menu {
+    display: block;
+}
+
+.sm-blue a,
+.sm-blue a:hover,
+.sm-blue a:focus,
+.sm-blue a:active {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
@@ -662,6 +790,22 @@ aside {
         grid-area: right;
         padding-top: 0;
         padding-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-menu {
+        clear: none;
+        display: block;
+    }
+
+    .main-menu::before {
+        display: none;
+    }
+
+    .main-menu-btn {
+        position: absolute;
+        top: -9999px;
     }
 }
 

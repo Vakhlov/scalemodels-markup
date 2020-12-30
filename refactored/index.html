@@ -5,6 +5,8 @@
 <head>
   <!-- refactored -->
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="include/js/smartmenus-1.1.0/css/sm-core-css.css">
+  <link rel="stylesheet" type="text/css" href="include/js/smartmenus-1.1.0/css/sm-blue/sm-blue.css">
   <!-- /refactored -->
 <title>Календарь событий : Сборные масштабные модели - ScaleModels.ru</title>
 <meta http-equiv="content-type"
@@ -24,22 +26,14 @@
 
 <script type="text/javascript">
 // <!--
-/* fallback.js v1.1.7 | http://fallback.io/ | Salvatore Garbesi <sal@dolox.com> | (c) 2015 Dolox, Inc. */
-(function(l,k){var b={g:[],w:{},A:0,head:k.getElementsByTagName("head")[0],a:{},p:0,f:[],e:{},m:0,d:{},c:{},r:0,t:function(){for(var a in b.k)b.k[a]&&b.v(b.k[a])},k:["Array","Function","Object","String"],v:function(a){b["is_"+a.toLowerCase()]=function(f){return"undefined"!==typeof f&&Object.prototype.toString.call(f)=="[object "+a+"]"}},i:function(a){this.is_function(a)||(a=function(){});return a},n:function(a,f){for(var c in a)if(a[c]===f)return c;return-1},is_defined:function(a){try{if(eval("window."+
-a))return!0}catch(f){}return!1},importer:function(a,f){var c,b,d,g,h,k,l,m={};for(d in a)if(g=a[d])this.is_string(g)&&(g=[g]),this.is_array(g)&&(c=[],this.is_array(this.a[d])&&(c=this.a[d]),m[d]=g,this.a[d]=c.concat(g));g={};if(this.is_object(f)&&(this.is_object(f.shim)||(this.is_object(f.deps)?f.shim=f.deps:this.is_object(f.dependencies)&&(f.shim=f.dependencies)),this.is_object(f.shim)))for(h in k=f.shim,k)if(c=k[h],this.a[h]&&c&&(this.is_string(c)&&(c=[c]),this.is_array(c))){l=[];for(b in c)d=c[b],
-this.a[d]&&d!==h&&l.push(d);c=[];this.is_array(this.d[h])&&(c=this.d[h]);g[h]=l;this.d[h]=c.concat(l)}return{a:m,d:g}},css:{}};b.css.l=function(a){if(!k.styleSheets)return!1;var f,c,e;for(f in k.styleSheets)if(c=k.styleSheets[f],0!==c)try{if(c.rules&&(e=b.css.q(c.rules,a))||c.cssRules&&(e=b.css.q(c.cssRules,a)))return e}catch(d){}return!1};b.css.q=function(a,b){var c,e;for(c in a)if(e=a[c],e.selectorText===b)return!0;return!1};b.load=function(a,b,c){var e,d;if(!this.is_object(a))return!1;this.is_function(b)&&
-(c=b,b={});this.is_object(b)||(b={});a=this.importer(a,b);for(e in a.a)d=a.a[e],this.d[e]||this.b(e,d);this.is_function(b.callback)&&this.ready([],b.callback);this.is_function(c)&&this.ready([],c)};b.ready=function(a,b){var c,e;if(this.is_function(a))b=a,a=[];else{if(!this.is_array(a)||this.is_string(a))a=[a];for(c in a)e=a[c],this.a[e]&&!this.d[e]&&this.b(e,this.a[e])}this.g.push({i:this.i(b),a:a});return this.j()};b.j=function(){var a,b,c,e,d,g=[],h=[];for(a in this.g)if(d=this.g[a],this.is_object(d)&&
-this.is_array(d.a)&&this.is_function(d.i)){e=!1;if(0<d.a.length){b=0;for(c in this.c)0<=this.n(d.a,c)&&b++;b===d.a.length&&(e=!0)}else this.p===this.r+this.m&&(e=!0);e?h.push(d.i):g.push(this.g[a])}this.g=g;for(a in h)h[a](this.c,this.e)};b.u=function(){var a,b,c,e;for(c in this.d)if((e=this.d[c])&&!this.c[c]){a=0;for(b in e)this.c[e[b]]&&a++;a===e.length&&(this.b(c,this.a[c]),delete this.d[c])}};b.b=function(a,b){if(-1!==this.n(this.f,a))return!1;this.p++;this.f.push(a);return this.b.o(a,b)};b.b.o=
-function(a,f){var c,e="js",d={loaded:!1,h:a,f:!0,url:f.shift(),s:f};if(-1<d.url.indexOf(".css")){e="css";if(b.css.l(a))return d.f=!1,b.b.c(d);c=k.createElement("link");c.B=!0;c.rel="stylesheet";c.href=d.url}else{if(b.is_defined(a))return d.f=!1,b.b.c(d);c=k.createElement("script");c.src=d.url}c.onload=function(){return"js"===e&&!b.is_defined(a)||"js"!==e&&!b.css.l(a)&&Object.hasOwnProperty.call(l,"ActiveXObject")&&!l.ActiveXObject?b.b.e(d):b.b.c(d)};c.onreadystatechange=function(){if(!this.readyState||
-"loaded"===this.readyState||"complete"===this.readyState)return this.onreadystatechange=null,"js"!==e||b.is_defined(a)?b.b.c(d):b.b.e(d)};c.onerror=function(){return b.b.e(d)};return b.head.appendChild(c)};b.b.e=function(a){a.f=!1;b.e[a.h]||(b.e[a.h]=[]);b.e[a.h].push(a.url);return a.s.length?b.b.o(a.h,a.s):(b.m++,b.j())};b.b.c=function(a){a.loaded||(a.loaded=!0,b.c[a.h]=a.url,b.r++);b.u();return b.j()};b.t();l.fallback=l.fbk=b})(window,document);
 var uid='0';
 var is_show_cpa={"worldofwarships":false,"ebay":true,"northstar":true,"social":true,"catalog":false,"local":false};
 
 var cx = '013922942496482871583:fo12ul7itpc';
 
-fallback.load({
+/*fallback.load({
     global_css: 'themes/scalemodels/style/style.css?1',
-    /*page_css: ['/include/js/smartmenus-1.1.0/css/sm-core-css.css', '/include/js/smartmenus-1.1.0/css/sm-blue/sm-blue.css'],*/
+    //page_css: ['/include/js/smartmenus-1.1.0/css/sm-core-css.css', '/include/js/smartmenus-1.1.0/css/sm-blue/sm-blue.css'],
 	'jQuery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js',
 	'jQuery.ui': 'https://code.jquery.com/ui/1.11.1/jquery-ui.min.js',
 	'jQuery.smartmenu': 'include/js/smartmenus-1.1.0/jquery.smartmenus.min.js',
@@ -58,7 +52,7 @@ fallback.load({
  		'jQuery.jCarousel': ['jQuery.Mosaic'],
 		//'GooglePlus': ['jQuery.Mosaic'],
 	}
-});
+});*/
 //-->
 </script>
 
@@ -141,208 +135,19 @@ fallback.load({
 </div>
 
 
-<link href='include/js/smartmenus-1.1.0/css/sm-core-css.css' rel='stylesheet' type='text/css' />
-<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
-<link href='include/js/smartmenus-1.1.0/css/sm-blue/sm-blue.css' rel='stylesheet' type='text/css' />
-
-<style type="text/css">
-    .main-nav {
-  background: #3092c0;
-  background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #3298c8), color-stop(100%, #2e8cb8));
-  background-image: -webkit-linear-gradient(to bottom, #3298c8, #2e8cb8);
-  background-image: -moz-linear-gradient(to bottom, #3298c8, #2e8cb8);
-  background-image: -o-linear-gradient(to bottom, #3298c8, #2e8cb8);
-  background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
-/*  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;*/
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.main-nav:after {
-  clear: both;
-  content: "\00a0";
-  display: block;
-  height: 0;
-  font: 0px/0 serif;
-  overflow: hidden;
-}
-
-.nav-brand {
-  float: left;
-  margin: 0;
-}
-.nav-brand a {
-  display: block;
-  padding: 10px 10px 10px 20px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-#main-menu {
-  clear: both;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-@media (min-width: 768px) {
-  #main-menu {
-    /*float: right;*/
-    clear: none;
-  }
-}
-
-
-/* Mobile menu top separator */
-
-#main-menu:before {
-  content: '';
-  display: block;
-  height: 1px;
-  font: 1px/1px sans-serif;
-  overflow: hidden;
-  background: #2e8cb8;
-}
-
-@media (min-width: 768px) {
-  #main-menu:before {
-    display: none;
-  }
-}
-
-
-/* Mobile menu toggle button */
-
-.main-menu-btn {
-  float: left;
-  margin: 10px;
-  position: relative;
-  /* display: inline-block; */
-  width: 20px;
-  height: 20px;
-  text-indent: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-
-/* hamburger icon */
-
-.main-menu-btn-icon,
-.main-menu-btn-icon:before,
-.main-menu-btn-icon:after {
-  position: absolute;
-  top: 50%;
-  left: 2px;
-  height: 2px;
-  width: 24px;
-  background: #fff;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.main-menu-btn-icon:before {
-  content: '';
-  top: -7px;
-  left: 0;
-}
-
-.main-menu-btn-icon:after {
-  content: '';
-  top: 7px;
-  left: 0;
-}
-
-
-/* x icon */
-
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
-  height: 0;
-  background: transparent;
-}
-
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
-  top: 0;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-
-/* hide menu state checkbox (keep it visible to screen readers) */
-
-#main-menu-state {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-
-/* hide the menu in mobile view */
-
-#main-menu-state:not(:checked) ~ #main-menu {
-  display: none;
-}
-
-#main-menu-state:checked ~ #main-menu {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  /* hide the button in desktop view */
-  .main-menu-btn {
-    position: absolute;
-    top: -99999px;
-  }
-  /* always show the menu in desktop view */
-  #main-menu-state:not(:checked) ~ #main-menu {
-    display: block;
-  }
-}
-
-.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
-    font-family:Arial, Helvetica, sans-serif !important;
-    font-size: 14px !important;
-}
-
-
-
-</style>
 <div style="clear:both;"><div>
-
-<nav class="main-nav" role="navigation" >
-
-  <!-- Mobile menu toggle button (hamburger/x icon) -->
-  <input id="main-menu-state" type="checkbox" />
+<!-- refactored -->
+<nav class="main-nav" role="navigation">
+  <input id="main-menu-state" type="checkbox" class="visually-hidden">
   <label class="main-menu-btn" for="main-menu-state">
-    <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+    <span class="main-menu-btn-icon"></span> Показать основное меню
   </label>
 
-<h2 class="nav-brand"><a href="/">Главная</a></h2>
-
-<ul id="main-menu" class="sm sm-blue">
-    <li><a href="/modules/news/">НОВОСТИ</a>
-    <ul>
+  <h2><a href="/">Главная</a></h2>
+  <ul id="main-menu" class="sm sm-blue main-menu">
+    <li>
+      <a href="/modules/news/">Новости</a>
+      <ul>
         <li><a href="/modules/news/index_topic_id_6.html">Анонсы</a></li>
         <li><a href="/modules/news/index_topic_id_2.html">События</a></li>
         <li><a href="/modules/news/index_topic_id_16.html">Конкурсы</a></li>
@@ -351,166 +156,178 @@ fallback.load({
         <li><a href="/modules/news/index_topic_id_21.html">Реклама</a></li>
         <li><a href="/modules/news/index_topic_id_29.html">Технические описания</a></li>
         <li><a href="/modules/news/archive.php">Архив новостей</a></li>
-	</ul>
-	</li>
-
-	<li ><a href="/modules/myarticles/">CВЕЖЕЕ</a>
-	<ul>
-	<li><a href="/modules/myarticles/index_topic_id_10.html">Обзоры...</a>
-            <ul>
-            <li><a href="/modules/myarticles/index_topic_id_1.html">&nbsp; Самолётов</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_14.html">&nbsp; Автомобилей</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_12.html">&nbsp; Танков и военной техники</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_11.html">&nbsp; Кораблей</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_6.html">&nbsp; Разного</a></li>
-            </ul>
-	</li>
-	<li><a href="/modules/myarticles/index_topic_id_9.html">Модели/Галерея...</a>
-            <ul>
-            <li><a href="/modules/myarticles/index_topic_id_2.html">&nbsp; Самолётов</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_13.html">&nbsp; Автомобилей</a></li>
-            <li><a href="/modules/myarticles/best_topic_5.html">&nbsp; БТТ (Танки, САУ, броневики)</a></li>
-            <li><a href="/modules/myarticles/best_topic_32.html">&nbsp; Военная техника</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_8.html">&nbsp; Аниме Garage Kits / фэнтези</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_29.html">&nbsp; Фантастика/Sci-Fi</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_28.html">&nbsp; Диорамы</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_7.html">&nbsp; Кораблей</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_25.html">&nbsp; Фигуры ВИМ/солдатики</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_30.html">&nbsp; Модели из бумаги</a></li>
-            <li><a href="/modules/myarticles/index_topic_id_27.html">&nbsp; Разное</a></li>
-            </ul>
-
-	</li>
-	<li><a href="/modules/myarticles/index_topic_id_3.html">Техники и советы</a></li>
-	<li><a href="/modules/myarticles/index_topic_id_24.html">&nbsp; Моделизм и компьютер/фото</a></li>
-	<li><a href="/modules/myarticles/index_topic_id_4.html">Разное</a></li>
-	<li><a href="/modules/myarticles/archive.php">Архив статей</a></li>
-	<li><a href="/modules/myarticles/top.php">Статистика</a></li>
-	</ul></li>
-
-	<li><a href="/modules/myarticles/best.html" >ЛУЧШЕЕ</a>
-	<ul>
-        <li><a href="/modules/myarticles/best_topic_10.html">Обзоры...</a>
-            <ul>
-            <li><a href="/modules/myarticles/best_topic_1.html">&nbsp; Самолётов</a></li>
-            <li><a href="/modules/myarticles/best_topic_14.html">&nbsp; Автомобилей</a></li>
-            <li><a href="/modules/myarticles/best_topic_12.html">&nbsp; Танков и военной техники</a></li>
-            <li><a href="/modules/myarticles/best_topic_11.html">&nbsp; Кораблей</a></li>
-            <li><a href="/modules/myarticles/best_topic_6.html">&nbsp; Разного</a></li>
-            </ul>
+      </ul>
+    </li>
+    <li>
+      <a href="/modules/myarticles/">Cвежее</a>
+      <ul>
+        <li>
+          <a href="/modules/myarticles/index_topic_id_10.html">Обзоры...</a>
+          <ul>
+            <li><a href="/modules/myarticles/index_topic_id_1.html">Самолётов</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_14.html">Автомобилей</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_12.html">Танков и военной техники</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_11.html">Кораблей</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_6.html">Разного</a></li>
+          </ul>
         </li>
-        <li><a href="/modules/myarticles/best_topic_9.html">Модели/Галерея...</a>
-            <ul>
-            <li><a href="/modules/myarticles/best_topic_2.html">&nbsp; Самолёты</a></li>
-            <li><a href="/modules/myarticles/best_topic_13.html">&nbsp; Автомобили</a></li>
-            <li><a href="/modules/myarticles/best_topic_5.html">&nbsp; БТТ (Танки, САУ, броневики)</a></li>
-            <li><a href="/modules/myarticles/best_topic_32.html">&nbsp; Военная техника</a></li>
-            <li><a href="/modules/myarticles/best_topic_8.html">&nbsp; Аниме Garage Kits / фэнтези</a></li>
-            <li><a href="/modules/myarticles/best_topic_29.html">&nbsp; Фантастика/Sci-Fi</a></li>
-            <li><a href="/modules/myarticles/best_topic_28.html">&nbsp; Диорамы</a></li>
-            <li><a href="/modules/myarticles/best_topic_7.html">&nbsp; Корабли</a></li>
-            <li><a href="/modules/myarticles/best_topic_25.html">&nbsp; Фигуры ВИМ/солдатики</a></li>
-            <li><a href="/modules/myarticles/best_topic_30.html">&nbsp; Модели из бумаги</a></li>
-            <li><a href="/modules/myarticles/best_topic_27.html">&nbsp; Разное</a></li>
-            </ul>
+        <li>
+          <a href="/modules/myarticles/index_topic_id_9.html">Модели/Галерея...</a>
+          <ul>
+            <li><a href="/modules/myarticles/index_topic_id_2.html">Самолётов</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_13.html">Автомобилей</a></li>
+            <li><a href="/modules/myarticles/best_topic_5.html">БТТ (Танки, САУ, броневики)</a></li>
+            <li><a href="/modules/myarticles/best_topic_32.html">Военная техника</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_8.html">Аниме Garage Kits / фэнтези</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_29.html">Фантастика/Sci-Fi</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_28.html">Диорамы</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_7.html">Кораблей</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_25.html">Фигуры ВИМ/солдатики</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_30.html">Модели из бумаги</a></li>
+            <li><a href="/modules/myarticles/index_topic_id_27.html">Разное</a></li>
+          </ul>
+        </li>
+        <li><a href="/modules/myarticles/index_topic_id_3.html">Техники и советы</a></li>
+        <li><a href="/modules/myarticles/index_topic_id_24.html">Моделизм и компьютер/фото</a></li>
+        <li><a href="/modules/myarticles/index_topic_id_4.html">Разное</a></li>
+        <li><a href="/modules/myarticles/archive.php">Архив статей</a></li>
+        <li><a href="/modules/myarticles/top.php">Статистика</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/modules/myarticles/best.html">Лучшее</a>
+      <ul>
+        <li>
+          <a href="/modules/myarticles/best_topic_10.html">Обзоры...</a>
+          <ul>
+            <li><a href="/modules/myarticles/best_topic_1.html">Самолётов</a></li>
+            <li><a href="/modules/myarticles/best_topic_14.html">Автомобилей</a></li>
+            <li><a href="/modules/myarticles/best_topic_12.html">Танков и военной техники</a></li>
+            <li><a href="/modules/myarticles/best_topic_11.html">Кораблей</a></li>
+            <li><a href="/modules/myarticles/best_topic_6.html">Разного</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/modules/myarticles/best_topic_9.html">Модели/Галерея...</a>
+          <ul>
+            <li><a href="/modules/myarticles/best_topic_2.html">Самолёты</a></li>
+            <li><a href="/modules/myarticles/best_topic_13.html">Автомобили</a></li>
+            <li><a href="/modules/myarticles/best_topic_5.html">БТТ (Танки, САУ, броневики)</a></li>
+            <li><a href="/modules/myarticles/best_topic_32.html">Военная техника</a></li>
+            <li><a href="/modules/myarticles/best_topic_8.html">Аниме Garage Kits / фэнтези</a></li>
+            <li><a href="/modules/myarticles/best_topic_29.html">Фантастика/Sci-Fi</a></li>
+            <li><a href="/modules/myarticles/best_topic_28.html">Диорамы</a></li>
+            <li><a href="/modules/myarticles/best_topic_7.html">Корабли</a></li>
+            <li><a href="/modules/myarticles/best_topic_25.html">Фигуры ВИМ/солдатики</a></li>
+            <li><a href="/modules/myarticles/best_topic_30.html">Модели из бумаги</a></li>
+            <li><a href="/modules/myarticles/best_topic_27.html">Разное</a></li>
+          </ul>
         </li>
         <li><a href="/modules/myarticles/best_topic_3.html">Техники и советы</a></li>
-        <li><a href="/modules/myarticles/best_topic_24.html">&nbsp; Моделизм и компьютер/фото</a></li>
+        <li><a href="/modules/myarticles/best_topic_24.html">Моделизм и компьютер/фото</a></li>
         <li><a href="/modules/myarticles/best_topic_4.html">Разное</a></li>
-    </ul>
+      </ul>
     </li>
-
-
-
-
-
-	<li><a href="/modules/myarticles/konkurs_year_2020.html">КОНКУРСЫ</a>
-	<ul>
-	<li><a href="/modules/myarticles/konkurs_year_2020.html">Большой конкурс 2020</a></li>
-	<li><a href="/modules/myarticles/konkurs_year_2019.html">Большой конкурс 2019</a></li>
-	<li><a href="/modules/myarticles/konkurs_year_2018.html">Большой конкурс 2018</a></li>
-
-	<li><a href="#">Архив</a>
-    	<ul>
-      <li><a href="/modules/myarticles/konkurs_year_2017.html">Большой конкурс 2017</a></li>
-			<li><a href="/modules/myarticles/konkurs_year_2016.html">Большой конкурс 2016</a></li>
-			<li><a href="/modules/myarticles/konkurs_year_2015.html">Большой конкурс 2015</a></li>
-    		<li><a href="/modules/myarticles/konkurs_year_2014.html">Большой конкурс 2014</a></li>
+    <li>
+      <a href="/modules/myarticles/konkurs_year_2020.html">Конкурсы</a>
+      <ul>
+        <li><a href="/modules/myarticles/konkurs_year_2020.html">Большой конкурс 2020</a></li>
+        <li><a href="/modules/myarticles/konkurs_year_2019.html">Большой конкурс 2019</a></li>
+        <li><a href="/modules/myarticles/konkurs_year_2018.html">Большой конкурс 2018</a></li>
+        <li>
+          <a href="#">Архив</a>
+          <ul>
+            <li><a href="/modules/myarticles/konkurs_year_2017.html">Большой конкурс 2017</a></li>
+            <li><a href="/modules/myarticles/konkurs_year_2016.html">Большой конкурс 2016</a></li>
+            <li><a href="/modules/myarticles/konkurs_year_2015.html">Большой конкурс 2015</a></li>
+            <li><a href="/modules/myarticles/konkurs_year_2014.html">Большой конкурс 2014</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2013.html">Большой конкурс 2013</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2012.html">Большой конкурс 2012</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2011.html">Большой конкурс 2011</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2010.html">Большой конкурс 2010</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2009.html">Большой конкурс 2009</a></li>
             <li><a href="/modules/myarticles/konkurs_year_2008.html">Большой конкурс 2008</a></li>
-    	</ul>
-	</li>
-	<li><a href="/modules/news/index_topic_id_16.html">Новости конкурсов</a></li>
-	</ul></li>
-
-	<li><a href="/modules/forum/">ПОЛЕЗНОЕ</a>
-	<ul>
-	<li><a rel="nofollow" href="http://walkarounds.scalemodels.ru">Новые walkaround'ы</a></li>
-    <li><a href="/modules/photo/viewcat_cid_1.html">Walkarounds - архив</a></li>
-    <li><a href="/modules/mydownloads/">Файлы</a></li>
-    <li><a href="/modules/mylinks/">Ссылки</a></li>
-    <li><a href="/modules/xoopsfaq/">FAQ/ЧАВО</a></li>
-	</ul></li>
-
-
-	<li><a href="/modules/forum/">ФОРУМ</a>
-	<ul>
-	<li><a href="/modules/forum/index_c_6.html">Строим вместе...</a>
-        <ul><li><a href="/modules/forum/viewforum_f_49.html">Тренажерная</a></li><li><a href="/modules/forum/viewforum_f_84.html">Бойцовский клуб</a></li><li><a href="/modules/forum/viewforum_f_90.html">Турнирное поле</a></li><li><a href="/modules/forum/viewforum_f_151.html">32-models (Mini Group Build)</a></li><li><a href="/modules/forum/viewforum_f_194.html">Рожденные ползать</a></li><li><a href="/modules/forum/viewforum_f_221.html">Броня крепка...!</a></li><li><a href="/modules/forum/viewforum_f_231.html">Совместная Постройка (GB) What IF 4 - авиация и наземная техника</a></li><li><a href="/modules/forum/viewforum_f_232.html">Совместная Постройка (GB) им. Папы Карло </a></li><li><a href="/modules/forum/viewforum_f_233.html">Group Build: Красные Звезды-5</a></li><li><a href="/modules/forum/viewforum_f_236.html">QuickBuild: Одномоторные самолеты Люфтваффе и других стран ОСИ</a></li><li><a href="/modules/forum/viewforum_f_237.html">Совместная Постройка (GB) им. Папы Карло -2</a></li></ul>
+          </ul>
+        </li>
+        <li><a href="/modules/news/index_topic_id_16.html">Новости конкурсов</a></li>
+      </ul>
     </li>
-	<li><a href="/modules/forum/index_c_4.html">Общие вопросы...</a>
-        <ul>
+    <li>
+      <a href="/modules/forum/">Полезное</a>
+      <ul>
+        <li><a href="http://walkarounds.scalemodels.ru" rel="nofollow">Новые walkaround'ы</a></li>
+        <li><a href="/modules/photo/viewcat_cid_1.html">Walkarounds - архив</a></li>
+        <li><a href="/modules/mydownloads/">Файлы</a></li>
+        <li><a href="/modules/mylinks/">Ссылки</a></li>
+        <li><a href="/modules/xoopsfaq/">FAQ/ЧАВО</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/modules/forum/">Форум</a>
+      <ul>
+        <li>
+          <a href="/modules/forum/index_c_6.html">Строим вместе...</a>
+          <ul>
+            <li><a href="/modules/forum/viewforum_f_49.html">Тренажерная</a></li>
+            <li><a href="/modules/forum/viewforum_f_84.html">Бойцовский клуб</a></li>
+            <li><a href="/modules/forum/viewforum_f_90.html">Турнирное поле</a></li>
+            <li><a href="/modules/forum/viewforum_f_151.html">32-models (Mini Group Build)</a></li>
+            <li><a href="/modules/forum/viewforum_f_194.html">Рожденные ползать</a></li>
+            <li><a href="/modules/forum/viewforum_f_221.html">Броня крепка...!</a></li>
+            <li><a href="/modules/forum/viewforum_f_231.html">Совместная Постройка (GB) What IF 4 - авиация и наземная техника</a></li>
+            <li><a href="/modules/forum/viewforum_f_232.html">Совместная Постройка (GB) им. Папы Карло </a></li>
+            <li><a href="/modules/forum/viewforum_f_233.html">Group Build: Красные Звезды-5</a></li>
+            <li><a href="/modules/forum/viewforum_f_236.html">QuickBuild: Одномоторные самолеты Люфтваффе и других стран ОСИ</a></li>
+            <li><a href="/modules/forum/viewforum_f_237.html">Совместная Постройка (GB) им. Папы Карло -2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/modules/forum/index_c_4.html">Общие вопросы...</a>
+          <ul>
             <li><a href="/modules/forum/viewforum_f_5.html">Общие вопросы моделизма</a></li>
             <li><a href="/modules/forum/viewforum_f_21.html">Изготовление и инструменты</a></li>
             <li><a href="/modules/forum/viewforum_f_12.html">Окраска моделей</a></li>
             <li><a href="/modules/forum/viewforum_f_6.html">Фарцовка</a></li>
             <li><a href="/modules/forum/viewforum_f_17.html">Модельные магазины</a></li>
             <li><a href="/modules/forum/viewforum_f_13.html">Место встречи</a></li>
-        </ul>
-	</li>
-	<li><a href="#">По темам...</a>
-    <ul>
-        <li><a href="/modules/forum/index_c_8.html">Авиация</a></li>
-        <li><a href="/modules/forum/viewforum_f_4.html">БТТ и военная техника</a></li>
-        <li><a href="/modules/forum/viewforum_f_8.html">Корабли</a></li>
-        <li><a href="/modules/forum/viewforum_f_30.html">Автомобили</a></li>
-        <li><a href="/modules/forum/viewforum_f_10.html">Фигурки и солдатики</a></li>
-        <li><a href="/modules/forum/viewforum_f_11.html">Диорамы</a></li>
-        <li><a href="/modules/forum/viewforum_f_53.html">Аниме Garage Kits / фэнтези</a></li>
-        <li><a href="/modules/forum/viewforum_f_98.html">Фантастика (Sci-Fi)</a></li>
-        <li><a href="/modules/forum/viewforum_f_99.html">Модели из бумаги</a></li>
-    </ul>
+          </ul>
+        </li>
+        <li>
+          <a href="#">По темам...</a>
+          <ul>
+            <li><a href="/modules/forum/index_c_8.html">Авиация</a></li>
+            <li><a href="/modules/forum/viewforum_f_4.html">БТТ и военная техника</a></li>
+            <li><a href="/modules/forum/viewforum_f_8.html">Корабли</a></li>
+            <li><a href="/modules/forum/viewforum_f_30.html">Автомобили</a></li>
+            <li><a href="/modules/forum/viewforum_f_10.html">Фигурки и солдатики</a></li>
+            <li><a href="/modules/forum/viewforum_f_11.html">Диорамы</a></li>
+            <li><a href="/modules/forum/viewforum_f_53.html">Аниме Garage Kits / фэнтези</a></li>
+            <li><a href="/modules/forum/viewforum_f_98.html">Фантастика (Sci-Fi)</a></li>
+            <li><a href="/modules/forum/viewforum_f_99.html">Модели из бумаги</a></li>
+          </ul>
+        </li>
+        <li><a href="/modules/forum/viewforum_f_2.html">Обсуждение сайта</a></li>
+        <li><a href="/modules/forum/viewforum_f_7.html">Курилка</a></li>
+        <li><a href="/modules/forum/viewforum_f_27.html">Компьютеры и программы</a></li>
+        <li><a href="/modules/forum/viewforum_f_65.html">Фотодело</a></li>
+      </ul>
     </li>
-	<li><a href="/modules/forum/viewforum_f_2.html">Обсуждение сайта</a></li>
-	<li><a href="/modules/forum/viewforum_f_7.html">Курилка</a></li>
-	<li><a href="/modules/forum/viewforum_f_27.html">Компьютеры и программы</a></li>
-	<li><a href="/modules/forum/viewforum_f_65.html">Фотодело</a></li>
-	</ul></li>
-
-
-	<li><a href="#">О САЙТЕ</a>
-	<ul>
-
-	<li><a href="/modules/partners/" rel="nofollow">Партнёры сайта</a></li>
-	<li><a href="/modules/xoopspoll/">Результаты голосований</a></li>
-	<li><a href="/modules/calendar/">Календарь событий</a></li>
-	<li><a href="/modules/userpoints/" rel="nofollow">Рейтинг пользователей</a></li>
-	<li><a href="/sitemap.php">Карта сайта</a></li>
-	<li><a href="/modules/contact/index_op_policy.html" rel="nofollow">Общая информация</a></li>
-	<li><a href="/modules/contact/index_op_contact.html" rel="nofollow">Связь с нами</a></li>
-	<li><a href="/modules/contact/index_op_link.html" rel="nofollow">Для веб-мастера</a></li>
-		
-    </ul></li>
-
-</ul>
-
+    <li>
+      <a href="#">О сайте</a>
+      <ul>
+        <li><a href="/modules/partners/" rel="nofollow">Партнёры сайта</a></li>
+        <li><a href="/modules/xoopspoll/">Результаты голосований</a></li>
+        <li><a href="/modules/calendar/">Календарь событий</a></li>
+        <li><a href="/modules/userpoints/" rel="nofollow">Рейтинг пользователей</a></li>
+        <li><a href="/sitemap.php">Карта сайта</a></li>
+        <li><a href="/modules/contact/index_op_policy.html" rel="nofollow">Общая информация</a></li>
+        <li><a href="/modules/contact/index_op_contact.html" rel="nofollow">Связь с нами</a></li>
+        <li><a href="/modules/contact/index_op_link.html" rel="nofollow">Для веб-мастера</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-<!--/div-->
-
+<!-- /refactored -->
 </div>
 
 <!-- refactored -->
@@ -1009,6 +826,23 @@ fallback.load({
     <!--/LiveInternet-->
   </div>
 </footer>
+<script type="text/javascript" src="js/fallback.js"></script>
+<script type="text/javascript">
+fallback.load(
+  {
+    'jQuery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js',
+    'jQuery.ui': 'https://code.jquery.com/ui/1.11.1/jquery-ui.min.js',
+    'jQuery.smartmenu': 'include/js/smartmenus-1.1.0/jquery.smartmenus.min.js',
+    'ThemeJS': 'js/theme.js'
+  },
+  {
+    shim: {
+      'jQuery.ui': ['jQuery'],
+      'jQuery.smartmenu': ['jQuery.ui'],
+    }
+  }
+);
+</script>
 <!-- /refactored -->
 <script src="include/js/lazysizes.min.js" async=""></script>
 
