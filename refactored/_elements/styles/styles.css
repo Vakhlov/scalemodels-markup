@@ -50,7 +50,12 @@ aside {
 }
 
 /* новости */
+/* TODO-refactor: font-family, font-size, line-height
+    font-family:
+        - определять выше
+*/
 .news-item {
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     margin-top: 20px;
     padding: 0 10px 16px 10px;
 }
@@ -138,7 +143,7 @@ aside {
 }
 
 .forum-links li {
-    line-height: 1.5;
+    line-height: 2.5;
 }
 
 .forum-links a {
@@ -216,6 +221,7 @@ aside {
 .best-articles__left a {
     display: block;
     font-size: 0;
+    font-weight: normal;
     position: relative;
 }
 
@@ -750,6 +756,11 @@ aside {
     font-size: 14px;
 }
 
+/* заголовок страницы */
+.page-header {
+    margin-bottom: 20px;
+}
+
 /* проекты */
 .projects {
     /* TODO-refactor: font-family
@@ -864,6 +875,7 @@ aside {
         grid-template-areas: "projects projects" "logo logo" "search auth";
         grid-template-columns: 1fr 200px;
         grid-template-rows: 1fr 75px 75px;
+        margin-bottom: 0;
     }
 
     .header-block {
@@ -891,6 +903,19 @@ aside {
 }
 
 @media (min-width: 768px) {
+    .main-nav h2 {
+        display: none;
+    }
+
+    .sm-blue a,
+    .sm-blue a:hover,
+    .sm-blue a:focus,
+    .sm-blue a:active,
+    .sm-blue a.highlighted {
+        padding-right: 21px;
+        padding-left: 21px;
+    }
+
     .main-menu {
         clear: none;
         display: block;
@@ -941,6 +966,19 @@ aside {
         margin-left: 60px;
     }
 
+    .main-nav h2 {
+        display: block;
+    }
+
+    .sm-blue a,
+    .sm-blue a:hover,
+    .sm-blue a:focus,
+    .sm-blue a:active,
+    .sm-blue a.highlighted {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
     main {
         grid-area: main;
     }
@@ -980,6 +1018,10 @@ aside {
         grid-area: author;
         line-height: 3;
         white-space: nowrap;
+    }
+
+    .forum-links li {
+        line-height: 1.5;
     }
 
     .best-articles__left a {
