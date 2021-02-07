@@ -26,7 +26,13 @@ aside {
     padding: 3px;
 }
 
-/* компоновочный блок */
+/* компоновочный блок заголовка */
+.header-block {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* компоновочный блок основного содержимого страницы */
 /* TODO-refactor: font-family, font-size, line-height
     font-family:
         - определять выше
@@ -773,6 +779,96 @@ aside {
     font-size: 14px;
 }
 
+/* проекты */
+.projects {
+    /* TODO-refactor: font-family
+    font-family:
+        - определять выше
+    */
+    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.projects ul {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects li {
+    display: inline;
+}
+
+.projects li:nth-child(n+2)::before {
+    content: ':';
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.projects a {
+    color: var(--linkColor);
+    font-weight: bold;
+}
+
+.projects a:hover,
+.projects a:focus,
+.porjects a:active {
+    color: var(--linkHover);
+}
+
+/* логотип */
+.logo a,
+.logo span {
+    display: block;
+    font-size: 0;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.logo img {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* форма поиска */
+.search-form {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* блок авторизации */
+.auth-buttons {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+/* кнопки */
+.action {
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000;
+}
+.action_primary {
+    background: linear-gradient(#3d85C6, #073763);
+}
+
+.action_secondary {
+    background: linear-gradient(#999, #CCC);
+}
+
+
 @media (min-width: 640px) {
     .best-articles__content {
         display: grid;
@@ -791,6 +887,37 @@ aside {
         padding-top: 0;
         padding-bottom: 0;
     }
+    
+    .page-header {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: "projects projects" "logo logo" "search auth";
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 1fr 75px 75px;
+    }
+
+    .header-block {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .projects {
+        grid-area: projects;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .search-form {
+        align-self: center;
+        grid-area: search;
+    }
+
+    .auth-buttons {
+        align-self: center;
+        grid-area: auth;
+    }
 }
 
 @media (min-width: 768px) {
@@ -806,6 +933,31 @@ aside {
     .main-menu-btn {
         position: absolute;
         top: -9999px;
+    }
+
+    .page-header {
+        grid-gap: 0;
+        grid-template-areas: "projects projects projects" "logo search auth";
+        grid-template-columns: 230px 1fr 200px;
+        grid-template-rows: 26px 75px;
+    }
+
+    .projects {
+        border-bottom: 1px solid #D1D7DC;
+        font-size: 11px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .logo {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .auth-buttons {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
     }
 }
 
@@ -884,6 +1036,17 @@ aside {
     .banner-list li {
         display: inline-block;
         margin: 0 4px 0 0;
+    }
+
+    .page-header {
+        grid-template-areas: "projects projects projects projects" "logo empty search auth";
+        grid-template-columns: 230px 1fr 500px 200px;
+    }
+
+    .search-form {
+        margin-right: 100px;
+        max-width: 400px;
+        text-align: right;
     }
 
     .footer-menu-container,

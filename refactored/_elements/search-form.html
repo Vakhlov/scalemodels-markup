@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Форма поиска</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="header-block search-form">
+            <gcse:searchbox-only></gcse:searchbox-only>
+            <input>
+        </div>
+    </body>
+</html>
+
+<!-- notes
+    Форма поиска подключается динамически: javascript-код загружает и вставляет ее на страницу (html и css в виде тега style). Поэтому повлиять на верстку хоть и можно, но не нужно, т.к. при выходе новой версии скрипта, форма может измениться.
+
+    Здесь приведен контейнер, который используется для позиционирования формы.
+-->
