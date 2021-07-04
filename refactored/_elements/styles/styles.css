@@ -121,7 +121,7 @@ aside {
     text-align: right;
 }
 
-/* блок ссылок на форум нод блоком новостей */
+/* блок ссылок на форум под блоком новостей */
 .forum-links ul {
 /* TODO-refactor: font-family, font-size, font-weight, line-height
     font-family:
@@ -654,14 +654,14 @@ aside {
 
 .main-nav h2 {
     float: left;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
     margin: 0;
 }
 
 .main-nav h2 a {
     color: #FFF;
     display: block;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
     font-weight: normal;
     padding: 10px 10px 10px 20px;
     text-decoration: none;

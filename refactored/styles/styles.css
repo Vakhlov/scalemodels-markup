@@ -2,6 +2,11 @@ html,
 body {
     --linkColor: #069;
     --linkHover: #DD6900;
+    --fontFamilyPrimary: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+    --fontFamilySecondary: Arial, Helvetica, sans-serif;
+    --fontFamilyAlternative: Calibri, sans-serif;
+
+    font-family: var(--fontFamilyPrimary);
     margin: 0;
     padding: 0;
 }
@@ -33,18 +38,9 @@ aside {
 }
 
 /* компоновочный блок основного содержимого страницы */
-/* TODO-refactor: font-family, font-size, line-height
-    font-family:
-        - определять выше
-    font-size:
-        - определять выше
-    line-height:
-        - определять выше
-*/
 .layout-block h2 {
     background-color: #EFEFEF;
     border-bottom: 1px solid #D1D7DC;
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
     line-height: 1.5;
@@ -58,27 +54,13 @@ aside {
 }
 
 /* новости */
-/* TODO-refactor: font-family, font-size, line-height
-    font-family:
-        - определять выше
-*/
 .news-item {
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     margin-top: 20px;
     padding: 0 10px 16px 10px;
 }
 
-/* TODO-refactor: font-family, font-size, line-height
-    font-family:
-        - указать дополнительные шрифты
-        - определять выше
-    font-size:
-        - определять выше
-    line-height:
-        - определять выше
-*/
 .news-item h3 {
-    font-family: Arial, sans-serif;
+    font-family: var(--fontFamilySecondary);
     font-size: 24px;
     line-height: 1.5;
 }
@@ -94,16 +76,6 @@ aside {
 }
 
 .news-item p {
-/* TODO-refactor: font-family, font-size, line-height
-    font-family:
-        - навести порядок со шрифтами, оставить наиболее похожие и поддерживаемые
-        - определять выше
-    font-size:
-        - определять выше
-    line-height:
-        - определять выше
-*/
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -114,35 +86,13 @@ aside {
 }
 
 .news-item footer {
-/* TODO-refactor: font-family, font-size, font-weight
-    font-family:
-        - навести порядок со шрифтами, оставить наиболее похожие и поддерживаемые
-        - определять выше
-    font-size:
-        - определять выше
-    font-weight:
-        - использовать утилитарный класс?
-*/
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-align: right;
 }
 
-/* блок ссылок на форум нод блоком новостей */
+/* блок ссылок на форум под блоком новостей */
 .forum-links ul {
-/* TODO-refactor: font-family, font-size, font-weight, line-height
-    font-family:
-        - навести порядок со шрифтами, оставить наиболее похожие и поддерживаемые
-        - определять выше
-    font-size:
-        - определять выше
-    font-weight:
-        - использовать утилитарный класс?
-    line-height:
-        - определять выше
-*/
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
     list-style: none;
@@ -181,13 +131,6 @@ aside {
 
 /* блок "Лучшие статьи" */
 .best-articles {
-    /* TODO-refactor: font-family, font-size
-    font-family:
-        - определять выше
-    font-size:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
 }
@@ -257,11 +200,6 @@ aside {
 /* ссылки постраничной разбивки */
 .pagination {
     display: flex;
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: bold;
     justify-content: space-between;
@@ -296,13 +234,6 @@ aside {
 
 /* блок "Важные новости" */
 .important-news {
-    /* TODO-refactor: font-family, font-size
-    font-family:
-        - определять выше
-    font-size:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
 }
@@ -313,7 +244,6 @@ aside {
     padding: 5px 0 15px 0;
 }
 
-/* TODO-refactor: верстка ссылок совпадает с версткой ссылок в блоке "Лучшие статьи" */
 .important-news a {
     align-items: center;
     color: var(--linkColor);
@@ -335,13 +265,6 @@ aside {
 
 /* блок подписки на рассылку */
 .subscription-form {
-    /* TODO-refactor: font-family, font-size
-    font-family:
-        - определять выше
-    font-size:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     padding-bottom: 10px;
 }
@@ -352,7 +275,6 @@ aside {
 }
 
 .subscription-form a {
-    /* TODO-refactor: color, font-weight */
     color: var(--linkColor);
     font-weight: bold;
 }
@@ -386,11 +308,6 @@ aside {
 }
 
 .people-list {
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     margin-bottom: 18px;
 }
 
@@ -413,7 +330,6 @@ aside {
 }
 
 .people-list a {
-    /* TODO-refactor: color, font-weight */
     color: var(--linkColor);
     font-weight: bold;
 }
@@ -425,11 +341,6 @@ aside {
 }
 
 .mailto-link {
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 11px;
     margin-bottom: 22px;
 }
@@ -446,18 +357,12 @@ aside {
 }
 
 .site-button {
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     margin-bottom: 22px;
 }
 
 .site-button span {
     display: block;
-    /* TODO-refactor: font-family */
-    font-family: Arial, sans-serif;
+    font-family: var(--fontFamilySecondary);
     font-size: 18px;
     line-height: 1.5;
     margin: .7em 0;
@@ -502,11 +407,6 @@ aside {
 /* меню в подвале */
 .footer-menu-container {
     background-color: #EFEFEF;
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 12px;
     margin-bottom: 30px;
     position: relative;
@@ -646,8 +546,6 @@ aside {
 }
 
 .copyright-and-info {
-    /* TODO-refactor: font-family */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 10px;
     text-align: center;
 }
@@ -683,14 +581,14 @@ aside {
 
 .main-nav h2 {
     float: left;
+    font-family: var(--fontFamilySecondary);
+    font-size: 20px;
     margin: 0;
 }
 
 .main-nav h2 a {
     color: #FFF;
     display: block;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
     font-weight: normal;
     padding: 10px 10px 10px 20px;
     text-decoration: none;
@@ -787,7 +685,7 @@ aside {
 .sm-blue a:hover,
 .sm-blue a:focus,
 .sm-blue a:active {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontFamilySecondary);
     font-size: 14px;
 }
 
@@ -798,11 +696,6 @@ aside {
 
 /* проекты */
 .projects {
-    /* TODO-refactor: font-family
-    font-family:
-        - определять выше
-    */
-    font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
     font-size: 14px;
     line-height: 28px;
     padding: 0 10px;
@@ -869,7 +762,7 @@ aside {
 .action {
     border-radius: 5px;
     color: #FFF;
-    font-family: Calibri, sans-serif;
+    font-family: var(--fontFamilyAlternative);
     font-size: 16px;
     font-weight: bold;
     display: inline-block;
