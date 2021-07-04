@@ -147,7 +147,7 @@ aside {
     font-weight: bold;
     list-style: none;
     margin: 0 0 0 14px;
-    padding: 0;
+    padding: 3px 0;
 }
 
 .forum-links li {
@@ -379,6 +379,12 @@ aside {
 }
 
 /* блок "О сайте" */
+.people {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
 .people-list {
     /* TODO-refactor: font-family
     font-family:
@@ -390,13 +396,13 @@ aside {
 
 .people-list span {
     display: block;
-    font-size: 9px;
+    font-size: 13px;
     font-weight: bold;
     padding: 9px;
 }
 
 .people-list ul {
-    font-size: 9px;
+    font-size: 13px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1016,6 +1022,18 @@ aside {
     aside {
         grid-area: aside;
         width: 310px;
+    }
+
+    .people {
+        display: block;
+    }
+    
+    .people-list span {
+        font-size: 9px;
+    }
+    
+    .people-list ul {
+        font-size: 9px;
     }
 
     .news-item {
