@@ -177,6 +177,7 @@ aside {
 }
 
 .best-articles__left img {
+    height: auto;
     width: 100%;
 }
 
