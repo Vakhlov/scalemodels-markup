@@ -704,6 +704,7 @@ aside {
 
 .projects ul {
     display: inline;
+    font-size: 0;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -711,12 +712,14 @@ aside {
 
 .projects li {
     display: inline;
+    font-size: 14px;
 }
 
 .projects li:nth-child(n+2)::before {
     content: ':';
     display: inline-block;
     margin-right: 4px;
+    margin-left: 4px;
 }
 
 .projects a {
@@ -872,6 +875,14 @@ aside {
         font-size: 11px;
         height: 25px;
         line-height: 25px;
+    }
+
+    .projects ul {
+        font-size: 0;
+    }
+
+    .projects li {
+        font-size: 11px;
     }
 
     .logo {
